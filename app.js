@@ -7,4 +7,16 @@ function adicionarAmigo() {
     }
     amigos.push(nome);
     document.getElementById('amigo').value = '';
+    adicionaLista();
 }
+
+function atualizaEMostraLista() {
+    let lista = document.getElementById('listaAmigos');
+    lista.innerHTML = '';
+    amigos.forEach((amigo) => {
+        let criaItemLi = document.createElement('li');
+        criaItemLi.innerHTML = amigo;
+        lista.appendChild(criaItemLi);
+    });
+}
+
