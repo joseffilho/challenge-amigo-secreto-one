@@ -7,7 +7,8 @@ function adicionarAmigo() {
     }
     amigos.push(nome);
     document.getElementById('amigo').value = '';
-    adicionaLista();
+    document.getElementById('amigo').focus();
+    atualizaEMostraLista();
 }
 
 function atualizaEMostraLista() {
@@ -20,3 +21,11 @@ function atualizaEMostraLista() {
     });
 }
 
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert('Por favor, adicione amigos antes de sortear.');
+        return;
+    }
+    let sortearAmigo = amigos[Math.floor(Math.random() * amigos.length)];
+    document.getElementById('resultado').innerHTML = sortearAmigo;
+}
