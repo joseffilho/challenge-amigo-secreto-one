@@ -16,3 +16,5 @@ todos os nomes adicionados. E abaixo da lista, está o botão para sortear um am
 secreto, a cada vez que é apertado. ![sortear-amigo](https://github.com/user-attachments/assets/33dab3ab-0e11-4983-94c1-b2c5e14d52c3)
 
 
+
+Para acessar o sorteador de amigo secreto - [Site do sistema](https://joseffilho.github.io/challenge-amigo-secreto-one/)
